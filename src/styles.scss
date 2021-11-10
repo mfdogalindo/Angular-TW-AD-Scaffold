@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root{
+    --header-height: 64px;
+    --footer-height: 52px;
+}
+
+article {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+@media screen and (max-width: 640px) {
+    :root{
+        --header-height: 48px;
+        --footer-height: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root{
+        --header-height: 48px;
+    }
+}
